@@ -1,0 +1,68 @@
+.Footer3c {
+    @apply
+    /* content */ text-white
+    /* box */ bg-gray-900
+}
+
+.Footer3c h2 {
+    @apply
+    /* content */ text-2xl font-semibold capitalize
+}
+
+.Footer3c h3 {
+    @apply
+    /* content */ text-xl font-semibold capitalize
+}
+
+.Footer3c p {
+    @apply
+    /* content */ text-sm text-justify
+}
+
+.Footer3c img {
+    @apply
+    /* UI */ cursor-pointer
+}
+
+.Footer3c .column-2 {
+    @apply
+    /* conetent */ capitalize
+}
+
+.Footer3c .column-2 span {
+    @apply
+    /* UI */ cursor-pointer
+}
+
+.socialIcons > li {
+    @apply
+    /* box */ h-8 w-8 rounded-full
+    /* UI */ cursor-pointer
+}
+
+.socialIcon {
+    @apply
+    /* content */ text-white
+    /* box */ h-full w-full
+    /* within box */ flex justify-center items-center
+}
+
+.facebook {
+    @apply
+    /* box */ bg-blue-700
+}
+
+.instagram {
+    @apply
+    /* box */ bg-purple-700
+}
+
+.twitter {
+    @apply
+    /* box */ bg-sky-500
+}
+
+.pinterest {
+    @apply
+    /* box */ bg-rose-700
+}

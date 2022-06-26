@@ -1,0 +1,27 @@
+.nav-3column {
+    @apply
+    /* position */ sticky top-0 z-[999]
+    /* box */ h-[50px]
+
+    /* responsive */ sm:h-[60px]
+}
+
+.wrapper {
+    @apply
+    /* box */ py-0 px-[10px]
+    /* within box */ flex items-center justify-between gap-2
+
+    /* responsive */ sm:py-[10px] sm:px-[20px]
+}
+
+.column-1 {
+    flex: 1;
+}
+
+.column-2 {
+    flex: 1;
+}
+
+.column-3 {
+    flex: 1;
+}

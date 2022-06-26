@@ -1,0 +1,6 @@
+.il-item img {
+    @apply
+    /* box */ h-full w-full
+    
+    /* contradiction */ object-contain
+}

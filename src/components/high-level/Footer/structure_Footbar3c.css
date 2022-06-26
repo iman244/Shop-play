@@ -1,0 +1,37 @@
+.structure-3column {
+   @apply
+   /* box */ grid grid-cols-3 gap-7
+}
+
+.Footer3c .wrapper {
+    @apply
+    /* box */ p-3
+}
+
+.Footer3c .column-1, .Footer3c .column-2, .Footer3c .column-3 {
+    @apply
+    /* box */ h-full
+    /* within box */ flex flex-col gap-2
+}
+
+.Footer3c .column-3 {
+    @apply
+    /* within box */ justify-between
+}
+
+.Footer3c .column-1 .socialIcons {
+    @apply
+    /* box */ mt-2
+    /* within box */ flex gap-2
+}
+
+
+.Footer3c .column-2 .il-textList {
+    @apply
+    /* within box */ grid grid-cols-2 gap-2
+}
+
+.Footer3c .column-3 .il-icontextList {
+    @apply
+    /* within box */ flex flex-col gap-2
+}

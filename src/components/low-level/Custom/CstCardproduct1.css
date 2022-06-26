@@ -1,0 +1,40 @@
+.il-CstCardproduct1 {
+    @apply
+    /* position */ relative
+    /* box */ h-[30vh] bg-blue-50
+    /* within box */ flex justify-center items-center
+}
+
+.circle {
+    @apply
+    /* position */ absolute z-[1]
+    /* box */ h-40 w-40 bg-white rounded-full
+}
+
+.il-CstCardproduct1 .il-img {
+    @apply
+    /* position */ z-[2]
+    /* box */ h-2/3 w-2/3
+    /* contradiction */ object-cover
+}
+
+.il-CstCardproduct1 .coverIcons {
+    @apply
+    /* position */ absolute top-0 bottom-0 left-0 right-0 z-[3]
+    /* content */ opacity-0
+    /* box */ bg-gray-600/30
+    /* within box */ flex items-center justify-center gap-2
+    /* effect */ transition-all duration-300 ease-in
+
+    /* conditionals */ hover:opacity-100
+}
+
+
+.coverIcons .icon {
+    @apply
+    /* content */ text-gray-900 text-lg
+    /* UI */ cursor-pointer
+    /* effect */ transition-all duration-300 ease-out transform
+
+    /* conditionals */ hover:scale-110 hover:text-blue-700
+}

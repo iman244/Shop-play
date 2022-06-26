@@ -1,0 +1,31 @@
+.nav-3column {
+    @apply
+    /* box */ bg-white
+}
+
+.nav-3column .column-2 {
+    @apply
+    /* content */ text-center uppercase font-semibold
+}
+
+.nav-3column .column-3 {
+    @apply
+    /* within box */ flex items-center justify-around
+}
+
+.nav-3column .column-3 button {
+    @apply
+    /* content */ text-sm uppercase
+    /* box */ p-2
+}
+
+.nav-3column .il-badge {
+    @apply
+    /* content */ text-white
+    /* box */ bg-blue-700
+}
+
+.nav-3column .il-search {
+    @apply
+    /* box */ border-2 hover:border-gray-600
+}

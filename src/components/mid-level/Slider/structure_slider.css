@@ -1,0 +1,34 @@
+.il-slider {
+    @apply
+    /* position */ relative
+    /* box */ h-[calc(100vh-50px)] w-screen
+
+    /* responsive */ sm:h-[calc(100vh-60px)]
+    /* contradiction */ overflow-hidden
+}
+
+.il-arrow {
+    @apply
+    /* position */ absolute top-1/2 z-50
+    /* content */ text-xl text-blue-700
+    /* UI */ cursor-pointer
+}
+
+.il-slides {
+    @apply
+    /* box */ h-full
+    /* within box */ flex
+        /* effect */ transition-transform duration-1000 ease-in-out
+}
+
+.il-slides li {
+    @apply
+    /* box */ h-full w-screen
+}
+
+.il-slide { 
+    @apply
+    /* box */ h-full w-screen
+    /* within box */ flex items-center justify-around
+
+}

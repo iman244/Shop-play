@@ -1,0 +1,6 @@
+.il-slider {
+    @apply
+    /* box */ w-full h-[calc(100vh-50px)]
+
+    /* responsive */ sm:h-[calc(100vh-60px)]
+}

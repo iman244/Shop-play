@@ -1,0 +1,23 @@
+.il-inputSend {
+    @apply
+    /* box */ bg-white
+    /* within box */ flex items-center justify-between
+}
+
+.il-inputSend .il-input {
+    flex: 7;
+    @apply
+    /* content */ capitalize
+    /* box */ h-full pl-3 outline-none border-2
+}
+
+.il-inputSend .il-button {
+    flex: 1;
+    @apply
+    /* content */ text-white text-lg
+    /* box */ h-full bg-blue-700 border-2 border-blue-700
+    /* within box */ flex items-center justify-center
+
+    /* conditionals */
+    /* hover */ hover:bg-blue-600 hover:border-blue-600
+}

@@ -1,0 +1,25 @@
+.categories {
+    @apply
+    /* box */ p-0
+    /* within box */ flex flex-col items-center justify-center gap-3
+
+    /* responsive */ sm:p-4 sm:flex-row
+}
+
+.popularProdcutsContainer {
+    @apply
+    /* box */ p-3
+    /* within box */ grid grid-cols-4 content-center gap-3
+}
+
+.popularProdcutsContainer > li {
+    @apply
+    /* box */ h-full w-full
+    /* within box */ flex justify-center
+}
+
+.popularProdcuts {
+    flex: 1;
+    @apply
+    /* box */ w-40
+}
