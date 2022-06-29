@@ -22,7 +22,6 @@ function Slider({ className, comp_ClassName, slideComponent, data }) {
           setFirstOrder(0);
         } else {
           setFirstOrder(pointedIdRight);
-          console.log(firstOrder);
         }
         break;
       default:
@@ -34,14 +33,12 @@ function Slider({ className, comp_ClassName, slideComponent, data }) {
       <i
         className="il-arrow left-0 ml-2 fa-solid fa-circle-left"
         onClick={() => {
-          console.log("left");
           handleOrder("left");
         }}
       ></i>
       <i
         className="il-arrow right-0 mr-2 fa-solid fa-circle-right"
         onClick={() => {
-          console.log("right");
           handleOrder("right");
         }}
       ></i>

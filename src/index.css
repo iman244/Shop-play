@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container-vp {
+    @apply /* box */ h-screen w-screen;
+  }
+
+  .centerChild {
+    @apply /* within box */ flex justify-center;
+  }
+
+  .s-row {
+    @apply /*within box */ flex flex-row;
+  }
+
+  .s-column {
+    @apply /* within box */ flex flex-col;
+  }
+
+  .s-column-2 {
+    @apply /* within box */ grid grid-cols-2;
+  }
+
+  .s-column-3 {
+    @apply /* within box */ grid grid-cols-3;
+  }
+
+  .box-full {
+    @apply /* within box */ h-full w-full;
+  }
+}

@@ -1,16 +1,14 @@
 import "./home.css";
+import "./register.css";
 import React from "react";
-import Navbar from "../components/high-level/Navbar3c/Navbar3c1";
 import List from "../components/mid-level/List/List";
 import Slider from "../components/mid-level/Slider/Slider";
 import { categories, popularProducts, slides } from "./Data/data";
 import NewsLetter from "./components/NewsLetter";
-import Footer from "../components/high-level/Footer/Footer3c";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="flex flex-col gap-2">
       <Slider
         comp_ClassName="bg-blue-100"
         slideComponent="Item"
@@ -31,7 +29,6 @@ const Home = () => {
       />
 
       <NewsLetter />
-      <Footer />
     </div>
   );
 };

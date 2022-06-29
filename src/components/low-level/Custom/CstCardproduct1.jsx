@@ -1,8 +1,15 @@
 import "./CstCardproduct1.css";
 import React from "react";
 import List from "../../mid-level/List/List";
+import { Link } from "react-router-dom";
 
-const CstCardproduct1 = ({ className, img_className, img_src, img_alt }) => {
+const CstCardproduct1 = ({
+  className,
+  id,
+  img_className,
+  img_src,
+  img_alt,
+}) => {
   const icons = [
     {
       id: 1,
@@ -18,10 +25,14 @@ const CstCardproduct1 = ({ className, img_className, img_src, img_alt }) => {
     },
   ];
   return (
-    <div
+    <Link
+      to={`/product/${id}`}
       className={
         className ? `il-CstCardproduct1 ${className}` : "il-CstCardproduct1"
       }
+      onClick={(event) => {
+        console.log(event.target);
+      }}
     >
       <div className="circle"></div>
       <img
@@ -35,7 +46,7 @@ const CstCardproduct1 = ({ className, img_className, img_src, img_alt }) => {
         component="Icon"
         data={icons}
       />
-    </div>
+    </Link>
   );
 };
 

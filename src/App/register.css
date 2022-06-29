@@ -1,0 +1,45 @@
+.registerUserForm.signUp {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+}
+
+.registerUserForm.signIn {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+}
+
+.registerUserForm form {
+  -webkit-box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.3);
+}
+
+.registerUserForm form > div {
+  @apply /* within box */ flex flex-col items-center gap-3;
+}
+
+.registerUserForm label {
+  flex: 1;
+  @apply /* content */ capitalize font-semibold
+    /* contradiction */ whitespace-nowrap;
+}
+
+.registerUserForm input {
+  flex: 3;
+  @apply /* content */ text-sm
+    /* box */ py-2 px-3 shadow-md outline-none;
+}
+
+.registerUserForm button {
+  @apply /* content */ font-bold capitalize text-lg text-white
+    /* box */ col-span-2 py-2 px-3 bg-blue-600 shadow-inner;
+}

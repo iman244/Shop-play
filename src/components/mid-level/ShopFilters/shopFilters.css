@@ -1,0 +1,14 @@
+.ShopFilters .wrapper {
+    @apply
+    /* box */ p-3
+}
+
+.ShopFilters h4 {
+    @apply
+    /* content */ font-semibold text-lg capitalize
+}
+
+.ShopFilters select {
+    @apply
+    /* box */ py-1 px-2 border-2
+}

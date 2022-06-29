@@ -1,3 +1,23 @@
+* {
+    @apply
+    /* box */ max-w-7xl
+}
+
+html {
+    @apply
+    /* box */mx-auto
+}
+
+#root {
+    @apply
+    /* box */ min-h-screen
+    /* within box */ flex flex-col gap-2
+}
+
+nav + div {
+    flex: 1;
+}
+
 .categories {
     @apply
     /* box */ p-0
@@ -8,7 +28,6 @@
 
 .popularProdcutsContainer {
     @apply
-    /* box */ p-3
     /* within box */ grid grid-cols-4 content-center gap-3
 }
 

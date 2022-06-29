@@ -13,7 +13,7 @@
     /* within box */ flex items-center justify-around
 }
 
-.nav-3column .column-3 button {
+.nav-3column .column-3 a {
     @apply
     /* content */ text-sm uppercase
     /* box */ p-2

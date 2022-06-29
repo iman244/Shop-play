@@ -27,16 +27,19 @@ function List({
         return (
           <CstCardIdPB
             className={`${comp_ClassName} ${item.className}`}
+            id={item.id}
             img_src={item.img}
             img_alt="category"
             text_p={item.title}
             text_button="shop now"
+            link={item.Link}
           />
         );
       case "CstCardproduct1":
         return (
           <CstCardproduct1
             className={`${comp_ClassName} ${item.className}`}
+            id={item.id}
             img_src={item.img}
             img_alt="product"
           />
@@ -82,7 +85,7 @@ function List({
         </ul>
       ) : (
         <ul
-          style={{ transform: `translateX(${firstOrder * -100}vw)` }}
+          style={{ transform: `translateX(${firstOrder * -100}%)` }}
           className={
             className ? `${ulClassName} ${className}` : `${ulClassName}`
           }

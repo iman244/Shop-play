@@ -1,5 +1,6 @@
 import "./CstCardIdPB.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CstCardIdPB = ({
   className,
@@ -7,6 +8,7 @@ const CstCardIdPB = ({
   dPB_className,
   p_className,
   button_className,
+  link,
   img_src,
   img_alt,
   text_p,
@@ -27,13 +29,25 @@ const CstCardIdPB = ({
         <p className={p_className ? `il-title ${p_className}` : "il-title"}>
           {text_p}
         </p>
-        <button
-          className={
-            button_className ? `il-button ${button_className}` : "il-button"
-          }
-        >
-          {text_button}
-        </button>
+        {!link ? (
+          <button
+            className={
+              button_className ? `il-button ${button_className}` : "il-button"
+            }
+          >
+            {text_button}
+          </button>
+        ) : (
+          <Link to={link}>
+            <button
+              className={
+                button_className ? `il-button ${button_className}` : "il-button"
+              }
+            >
+              {text_button}
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );
