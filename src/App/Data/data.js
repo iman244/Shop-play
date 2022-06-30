@@ -27,19 +27,19 @@ export const categories = [
     id: 1,
     img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     title: "SHIRT STYLE!",
-    Link: './shirtStyle'
+    Link: '/productList'
   },
   {
     id: 2,
     img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     title: "LOUNGEWEAR LOVE",
-    Link: './loungewearlove'
+    Link: '/productList'
   },
   {
     id: 3,
     img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     title: "LIGHT JACKETS",
-    Link: './lightJackets'
+    Link: '/productList'
   },
 ];
 
@@ -101,3 +101,20 @@ export const popularProducts = [
     price: '$ 80'
   },
 ];
+
+export const orderProducts = [
+  {
+    id: 1,
+    name: 'shirt',
+    img: "https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+    size: 'xl',
+    price: 30
+  },
+  {
+    id: 2,
+    name: 'bag',
+    img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    size: 'm',
+    price: 50
+  }
+]

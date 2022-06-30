@@ -7,6 +7,7 @@ import SignUp from "./App/SignUp";
 import Footer from "./components/high-level/Footer/Footer3c";
 import Navbar from "./components/high-level/Navbar3c/Navbar3c1";
 import SignIn from "./App/SignIn";
+import Cart from "./App/Cart";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
+          <Route path="/cart" component={Cart} />
           <Route path="/productList" component={ProductList} />
           <Route path="/product/:id" component={Product} />
           <Route path="/signUp" component={SignUp} />

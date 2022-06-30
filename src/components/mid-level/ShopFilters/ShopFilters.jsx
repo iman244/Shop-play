@@ -4,8 +4,8 @@ import React from "react";
 const ShopFilters = () => {
   return (
     <div className="ShopFilters">
-      <div className="wrapper il-flexRowb">
-        <div className="il-flexRow">
+      <div className="wrapper flex justify-between">
+        <div className="flex gap-5">
           <h4>filter products</h4>
           <select>
             <option disabled selected>
@@ -29,7 +29,7 @@ const ShopFilters = () => {
             <option value="xl">xl</option>
           </select>
         </div>
-        <div className="il-flexRow">
+        <div className="flex gap-5">
           <h4>sort products</h4>
           <select name="" id="">
             <option disabled selected>

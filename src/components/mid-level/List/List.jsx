@@ -4,11 +4,14 @@ import Item from "../../low-level/Item/Item";
 import CstCardIdPB from "../../low-level/Custom/CstCardIdPB";
 import CstCardproduct1 from "../../low-level/Custom/CstCardproduct1";
 import IconText from "../../low-level/Icon/IconText";
+import ProductCard from "../ProductCard/ProductCard";
 
 function List({
   slide,
+  hr,
   className,
   comp_ClassName,
+  hr_className,
   component,
   data,
   firstOrder,
@@ -22,7 +25,8 @@ function List({
         return (
           <Item className={`${comp_ClassName} ${item.className}`} data={item} />
         );
-
+      case "ProductCard":
+        return <ProductCard data={item} />;
       case "CstCardIdPB":
         return (
           <CstCardIdPB
@@ -75,9 +79,12 @@ function List({
         >
           {data ? (
             data.map((item) => (
-              <li key={item.id} className={item.liClassName}>
-                {Component(item)}
-              </li>
+              <>
+                <li key={item.id} className={item.liClassName}>
+                  {Component(item)}
+                </li>
+                {hr && <hr className={hr_className} />}
+              </>
             ))
           ) : (
             <p>no data ...</p>

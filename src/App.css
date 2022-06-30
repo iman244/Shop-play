@@ -1,0 +1,57 @@
+.cart .ordered-products {
+    @apply
+    /* position */ mt-10
+}
+
+.cart button {
+    @apply
+    /* content */ font-semibold capitalize
+    /* box */ py-2 px-3 border-4 border-blue-900 outline-none
+}
+
+button.simple {
+    @apply
+    /* content */ text-white
+    /* box */  bg-blue-900
+}
+
+button.outline {
+    @apply
+    /* content */ text-blue-900
+    /* box */ bg-transparent
+}
+
+.ul-productCard li {
+@apply
+/* box */ py-10
+}
+
+.ul-productCard li:not(:last-child) {
+    @apply
+    /* box */ border-b-2
+}
+
+.cart .order-summary {
+    @apply
+    /* within box */ flex flex-col gap-10
+}
+
+.cart .order-summary > div {
+    @apply
+    /* within box */ flex flex-col gap-5
+}
+
+.cart .order-summary > div > div {
+    @apply
+    /* within box */ flex
+}
+
+.cart .order-summary > div > div > span:first-child {
+    flex: 4;
+    @apply
+    /* content */ capitalize
+}
+
+.cart .order-summary > div > div :not(:first-child) {
+    flex: 1;
+}

@@ -30,7 +30,7 @@ export const contactItems = [
   {
     id: 2,
     icon: <ion-icon name="call"></ion-icon>,
-    text: "+98 21 6688 6190",
+    text: "+98 915 4884 136",
   },
   {
     id: 3,

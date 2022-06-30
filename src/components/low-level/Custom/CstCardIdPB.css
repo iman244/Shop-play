@@ -3,7 +3,6 @@
     @apply
     /* position */ relative
     /* box */ h-[30vh]
-    /* UI */ cursor-pointer
 }
 
 .il-CstCardIdPB .il-img {

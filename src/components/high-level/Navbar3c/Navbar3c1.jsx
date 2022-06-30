@@ -18,10 +18,12 @@ const Navbar = () => {
         <div className="column-3">
           <Link to="/signUp">sign up</Link>
           <Link to="/signIn">sign in</Link>
-          <Icon
-            icon={<i className="fa-solid fa-cart-shopping"></i>}
-            badge={2}
-          />
+          <Link to="/cart">
+            <Icon
+              icon={<i className="fa-solid fa-cart-shopping"></i>}
+              badge={2}
+            />
+          </Link>
         </div>
       </div>
     </nav>

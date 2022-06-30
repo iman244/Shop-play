@@ -1,6 +1,6 @@
 .ShopFilters .wrapper {
     @apply
-    /* box */ p-3
+    /* box */ py-6 px-3
 }
 
 .ShopFilters h4 {
