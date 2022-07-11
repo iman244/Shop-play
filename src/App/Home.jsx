@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <div className="flex flex-col gap-2">
       <Slider
+        className="hidden sm:block"
         comp_ClassName="bg-blue-100"
         slideComponent="Item"
         data={slides}

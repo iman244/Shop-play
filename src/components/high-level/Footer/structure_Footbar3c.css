@@ -1,17 +1,21 @@
-.structure-3column {
-   @apply
-   /* box */ sm:grid sm:grid-cols-3 sm:gap-7
-}
-
 .Footer3c .wrapper {
     @apply
-    /* box */ p-3
+    /* box */ p-3 flex flex-col items-start gap-7
+
+   /* responsive */ sm:grid sm:grid-cols-3 sm:gap-7
 }
 
 .Footer3c .column-1, .Footer3c .column-2, .Footer3c .column-3 {
     @apply
     /* box */ h-full
     /* within box */ flex flex-col gap-2
+}
+
+.Footer3c .column-2 {
+    @apply
+    /* box */ hidden
+
+    /* responsive */ sm:block
 }
 
 .Footer3c .column-3 {

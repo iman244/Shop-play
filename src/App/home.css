@@ -1,11 +1,11 @@
-* {
-    @apply
-    /* box */ max-w-7xl
-}
-
 html {
     @apply
-    /* box */mx-auto
+    /* box */ max-w-full flex justify-center
+}
+
+html * {
+    @apply
+    /* box */ max-w-full
 }
 
 #root {
@@ -18,27 +18,30 @@ nav + div {
     flex: 1;
 }
 
+.wrapper {
+    @apply
+    /* box */ max-w-full
+}
+
 .categories {
     @apply
     /* box */ p-0
-    /* within box */ flex flex-col items-center justify-center gap-3
+    /* within box */ flex flex-wrap items-center justify-center gap-3
 
     /* responsive */ sm:p-4 sm:flex-row
 }
 
 .popularProdcutsContainer {
     @apply
-    /* within box */ grid grid-cols-4 content-center gap-3
+    /* within box */ flex flex-wrap justify-center gap-3
 }
 
 .popularProdcutsContainer > li {
     @apply
-    /* box */ h-full w-full
+    /* box */ h-[30vh] w-[40vw] min-h-[300px] min-w-[200px] max-w-[300px]
     /* within box */ flex justify-center
 }
 
 .popularProdcuts {
     flex: 1;
-    @apply
-    /* box */ w-40
 }
